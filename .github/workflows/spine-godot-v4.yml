@@ -39,6 +39,7 @@ env:
   GODOT_VERSION: ${{ inputs.godot_version }}
   GODOT_MONO: ${{ inputs.godot_mono }}
   GODOT_MONO_UPLOAD_SUFFIX: ${{ inputs.godot_mono == true && '-mono' || '' }}
+  SCRIPT_AES256_ENCRYPTION_KEY: ${{ secrets.PCK_KEY }}
 
 jobs:
 
